@@ -17,9 +17,9 @@ public class LightBoard
       for(int c = 0; c < numCols; c++){
         rand = Math.random();
         if(rand < 0.4){
-          return true;
+          lights[r][c] = true;
         } else {
-          return false;
+          lights[r][c] = false;
         }
       }
     }
