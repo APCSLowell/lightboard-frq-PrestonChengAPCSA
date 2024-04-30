@@ -10,17 +10,15 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
-    double rand = 0;
+
     /* to be implemented in part (a) */
     lights = new boolean[numRows][numCols];
     for(int r = 0; r < numRows; r++){
       for(int c = 0; c < numCols; c++){
-        rand = Math.random();
+        double rand = Math.random();
         if(rand < 0.4){
           lights[r][c] = true;
-        } else {
-          lights[r][c] = false;
-        }
+        } 
       }
     }
 
