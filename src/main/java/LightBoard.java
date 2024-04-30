@@ -34,9 +34,8 @@ public class LightBoard
         numOn++;
       }
     }
-  }
 
-  if(lights[row][col] && numOn % 2 == 0){
+      if(lights[row][col] && numOn % 2 == 0){
     return false;
   }
 
@@ -45,6 +44,8 @@ public class LightBoard
   }
     return lights[row][col];
   }
+
+
 
   public boolean[][] getLights()
   {
