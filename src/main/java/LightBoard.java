@@ -30,17 +30,18 @@ public class LightBoard
   {
     /* to be implemented in part (b) */
     int counter = 0;
+    
     for(int r = 0; r < lights.length; r++){
-      if(lights[r][col] == true){
+      if(lights[r][col]){
         counter++;
       }
     }
 
-    if(lights[row][col] == true && counter % 2 == 0){
+    if(lights[row][col] && counter % 2 == 0){
       return false;
     }
 
-    if(lights[row][col] == false && counter % 3 == 0){
+    if(!lights[row][col] && counter % 3 == 0){
       return true;
     }
     return lights[row][col];
