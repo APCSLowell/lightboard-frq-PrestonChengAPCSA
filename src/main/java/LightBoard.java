@@ -38,7 +38,7 @@ public class LightBoard
       }
     }
 
-    if(lights[row][col] == true && counter % 2 = 0){
+    if(lights[row][col] == true && counter % 2 == 0){
       return false;
     }
 
